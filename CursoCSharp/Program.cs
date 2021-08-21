@@ -1,13 +1,19 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+
+using CursoCSharp.Fundamentos;
 
 namespace CursoCSharp {
     class Program {
-        static void Main2(string[] args) {
-            Console.WriteLine("Hello World!");
+        static void Main(string[] args) {
+            var central = new CentralDeExercicios(new Dictionary<string, Action>() {
+                {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
+                {"Comentarios - Fundamentos" , Comentarios.Executar },
+                {"Variaveis e Constantes - Fundamentos", VariaveisEConstantes.Executar },
 
-            {
-                Console.WriteLine("Hello World 2!");
-            }
+            }) ;
+
+            central.SelecionarEExecutar();
         }
     }
 }
