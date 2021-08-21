@@ -20,7 +20,7 @@ namespace CursoCSharp.Fundamentos
 
             int b = 2;
 
-            Console.WriteLine(a + b);                
+            Console.WriteLine(a * b);                
         }
     }
 }
