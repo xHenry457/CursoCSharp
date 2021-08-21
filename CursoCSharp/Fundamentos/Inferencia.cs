@@ -15,7 +15,12 @@ namespace CursoCSharp.Fundamentos
             var idade = 32;
             Console.WriteLine(idade);
          
-            
+            int a;
+            a = 3;
+
+            int b = 2;
+
+            Console.WriteLine(a + b);                
         }
     }
 }
